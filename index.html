@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e0f7fa, #80deea);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* Animasi umum */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeZoom {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Navigasi */
+    .navbar {
+      background-color: #00796b;
+      padding: 15px;
+      text-align: center;
+      animation: fadeInUp 1s ease;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+      display: inline-block;
+    }
+    .navbar a:hover {
+      color: #ffcc80;
+      transform: translateY(-2px);
+    }
+
+    /* Foto profil */
+    .image-container img {
+      border-radius: 50%;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+      margin-top: 20px;
+      animation: fadeZoom 1.2s ease;
+      transition: transform 0.3s;
+    }
+    .image-container img:hover {
+      transform: scale(1.05);
+    }
+
+    h2, h3 {
+      color: #004d40;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    p {
+      animation: fadeInUp 1.5s ease;
+    }
+
+    /* Tabel */
+    table {
+      border-collapse: collapse;
+      margin: 20px auto;
+      width: 70%;
+      background: white;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      animation: fadeInUp 1.8s ease;
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #00796b;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:hover {
+      background-color: #b2dfdb;
+      transition: background-color 0.3s;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background-color: #004d40;
+      color: white;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      animation: fadeInUp 2s ease;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navigasi -->
+  <div class="navbar">
+    <a href="home1.html">Home</a>
+    <a href="contact1.html">Contact</a>
+    <a href="about1.html">About me</a>
+  </div>
+
+  <!-- Profil -->
+  <center>
+    <div class="image-container">
+      <img src="e:\WhatsApp Image 2025-08-29 at 19.29.44_44ee8a55.jpg" alt="Gabriel Saurman Parhusip" width="150" height="150">
+    </div>
+    <h3>Gabriel Saurman Parhusip</h3>
+    <p><i>(Seorang Kamen Rider yang kebetulan lewat)</i></p>
+  </center>
+
+  <!-- Overview -->
+  <center>
+    <h2>Overview</h2>
+    <p>Hi, Saya adalah NPC yang berdomisili di Medan. Saat ini sedang belajar di Fasilkom-TI</p>
+    
+    <table>
+      <tr>
+        <th>Skill</th>
+        <th>Pengalaman</th>
+      </tr>
+      <tr>
+        <td>Menghek Akun</td>
+        <td>Menghek akun epep publik</td>
+      </tr>
+      <tr>
+        <td>Pro Player epep</td>
+        <td>Membantai bermuda 1 juta kali</td>
+      </tr>
+      <tr>
+        <td>Jago menggaet cewek (katanya)</td>
+        <td>Menjadi Pacar Mici selama ini</td>
+      </tr>
+    </table>
+  </center>
+
+  <!-- Footer -->
+  <footer>
+    <center>
+      <p><b>Copyright © 2025 Gabriel Saurman Parhusip.</b></p>
+    </center>
+  </footer>
+
+</body>
+</html>

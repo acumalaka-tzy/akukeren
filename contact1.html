@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e0f7fa, #80deea);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeZoom {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .navbar {
+      background-color: #00796b;
+      padding: 15px;
+      text-align: center;
+      animation: fadeInUp 1s ease;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+    }
+    .navbar a:hover {
+      color: #ffcc80;
+      transform: translateY(-2px);
+    }
+
+    .image-container img {
+      border-radius: 50%;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+      margin-top: 20px;
+      animation: fadeZoom 1.2s ease;
+      transition: transform 0.3s;
+    }
+    .image-container img:hover {
+      transform: scale(1.05);
+    }
+
+    h2, h3 { color: #004d40; animation: fadeInUp 1.2s ease; }
+    p { animation: fadeInUp 1.5s ease; }
+
+    /* Form */
+    form {
+      width: 60%;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      animation: fadeInUp 1.8s ease;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s;
+    }
+    input[type="email"]:focus, textarea:focus {
+      border-color: #00796b;
+      outline: none;
+    }
+    textarea {
+      height: 120px;
+    }
+    input[type="submit"] {
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    input[type="submit"]:hover {
+      background-color: #004d40;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background-color: #004d40;
+      color: white;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      animation: fadeInUp 2s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="home1.html">Home</a>
+    <a href="contact1.html">Contact</a> 
+    <a href="about1.html">About Me</a>
+  </div>
+
+  <center>
+    <div class="image-container">
+      <img src="e:\WhatsApp Image 2025-08-29 at 19.29.44_44ee8a55.jpg" alt="Gabriel Saurman Parhusip" width="150" height="150">
+    </div>
+    <h3>Gabriel Saurman Parhusip</h3>
+    <p><i>(Seorang Kamen Rider yang kebetulan lewat)</i></p>
+  </center>
+
+  <center>
+    <h2>Contact Me</h2>
+  </center>
+
+  <form action="#" method="post">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="alamat email">
+
+    <label for="pesan">Pesan</label>
+    <textarea id="pesan" name="pesan" placeholder="Tulis pesan anda..."></textarea>
+
+    <input type="submit" value="Kirim">
+  </form>
+
+  <footer>
+    <center>
+      <p><b>Copyright © 2025 Gabriel Saurman Parhusip.</b></p>
+    </center>
+  </footer>
+</body>
+</html>
